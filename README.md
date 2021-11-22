@@ -1,2 +1,2 @@
 # curso-senac-ti
-Atividades e conteúdo de lógica de programação:
+Atividades e conteúdo de lógica de programação passado nas aulas

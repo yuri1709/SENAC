@@ -1,0 +1,33 @@
+<html>
+    <head>Média
+    <meta charset = "utf-8">
+
+    </head>
+   
+    <br>
+    <body>
+        <script>
+    
+        var horas = prompt("Quantidade de horas:");
+        horas = parseFloat(horas); 
+       
+        var nivel = prompt("Nível do professor:");
+        nivel = parseInt(nivel);    
+
+        if (nivel === 1){
+            var salario = horas*12;
+            document.write("Salário="+salario);
+        }else
+        if (nivel === 2){
+            var salario = horas*17;
+            document.write("Salário="+salario);
+        }else
+        if (nivel ===3){
+            var salario = horas*25;
+            document.write("Salário="+salario);
+        }
+    
+        </script>
+    </body>
+
+</html>

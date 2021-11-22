@@ -1,6 +1,5 @@
-
 <html>
-    <head>Média
+    <head>MédiaComFor
     <meta charset = "utf-8">
 
     </head>
@@ -10,7 +9,7 @@
         <script>
     
     cont=1;
-    while (cont<=3){    
+    for (cont=1; cont <=3 ;cont++) {    
         
         var n1 = prompt("N1:");     
         n1 = parseFloat(n1);
@@ -21,7 +20,9 @@
         var n3 = prompt("N3:");
         n3 = parseFloat(n3);    
      
-        var media = (n1+n2+n3)/3;
+        
+        media = (n1+n2+n3)/3;
+
         document.write("</br>");
         document.write("Sua média ="+media); 
         //Estrutura condicional
@@ -39,7 +40,7 @@
         console.log(n1);
         console.log(n2);
         console.log(n3);
-        cont = cont+1
+      
     }    
         </script>
     </body>

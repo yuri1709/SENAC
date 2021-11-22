@@ -9,20 +9,24 @@
     <body>
         <script>
         
-       
+        //contador
+        cont=1;
+        while (cont <=3) {        
 
-        var n1 = prompt("N1:");     
-        n1 = parseFloat(n1);
+            var n1 = prompt("N1:");     
+            n1 = parseFloat(n1);
 
-        var n2 = prompt("N2:");
-        n2 = parseFloat(n2);
-            
-        var n3 = prompt("N3:");
-        n3 = parseFloat(n3);    
+            var n2 = prompt("N2:");
+            n2 = parseFloat(n2);
+
+            var n3 = prompt("N3:");
+            n3 = parseFloat(n3);    
      
-        var media = (n1+n2+n3)/3;
+            var media = (n1+n2+n3)/3;
         
-        document.write("Sua média ="+media); 
+            document.write("Sua média ="+media);
+            cont = cont+1
+        }     
     
         </script>
     </body>

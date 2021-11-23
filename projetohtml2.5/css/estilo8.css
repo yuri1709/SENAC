@@ -1,0 +1,83 @@
+body{
+    color:blue
+}
+
+form{
+width:100%;
+}
+
+input{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 35px;
+    box-sizing: border-box /*borda da caixa de texto*/
+}
+/*TEXT*/
+input[type=text]{
+    width:60%;
+    padding:12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+/*EMAIL*/
+input[type=email]{
+    width:60%;
+    padding:12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+/*PASSWORD*/
+input[type=password]{
+    width:30%;
+    padding:12px 20px;
+    margin: 8px 0px;   /*posição horizontal da border-box*/
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+/*RADIO BUGADO!*/
+input[type=radio]{
+    width:30%;
+    padding:12px 20px;
+    margin: 8px 0px;   /*posição horizontal da border-box*/
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+ 
+/*CHECKBOX* BUGADO!*/
+input[type=checkbox]{
+    width:30%;
+    padding:12px 20px;
+    margin: 8px 0px;   /*posição horizontal da border-box*/
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+
+/*TEXT-AREA BUGADO POR CONTA DO CHECKBOX E RADIO!*/
+textarea{
+    width:60px;
+    padding:12px 20px;
+    margin: 8px 0px;   
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+
+button{
+    background-color: bisque;
+    color: black;
+    padding: 15px;
+    width:8%;
+    margin-top:30px;
+    margin-left:250px;
+}
+
+.container{
+    width:100%;
+    height:0 auto;
+}

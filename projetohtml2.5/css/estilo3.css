@@ -1,0 +1,70 @@
+.header{  /*Configurando o header para desbugar o container*/
+    width:100%;
+    height:100px;
+}
+
+
+.row{ /*isso aqui é o 100% então se quero dividr ao meio tenho que por 50% no .container*/
+    width:100%;
+    height:300px;
+    margin:0 auto;
+}
+
+/*configurando o footer*/
+.footer{ 
+    width:100%;
+    height:300px;
+    margin:0 auto;
+}
+
+
+/* quando usamos class no html,no css usamos .*/
+.container{
+    width: 50%; /*deixa um no lado do outro*/
+    float:left;  /*faz um ficar do lado do outro,float pode ser (left,right)*/
+    height:300px; /*dimensiona o tamanho do retângulo*/
+    background-color:gray; /*cor de fundo do container*/
+}
+
+/*criando uma barra de navegação*/
+.bar{ 
+    color: orangered; /*mudar a cor da ancora ao clickar sobre ela.*/
+    margin-bottom: 30px;
+    
+    width: 100%;
+    height:15px;
+
+}
+
+/*retira as bolinhas azuis da barra de navegação*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*oque é esse a hover ?*/
+
+
+li{
+    display: inline;
+    float:left
+}
+
+/*Edita o desgin do retângulo do menu*/
+a{
+    display: block;
+    padding: 9px;
+    background-color: #dddddd;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    padding: 10px 16px; /*aumenta a largura do retângulo*/
+}
+
+/*muda a cor do menu quando passa o mouse*/
+li a:hover{
+    background-color:orangered;
+    color:white;
+}

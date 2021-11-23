@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/gabaritop9.css" />
+	<title>Formulário</title>
+</head>
+<body>
+	<header>
+		<div class="topo">Cadastro de Usuário</div>
+	</header>
+	<section class="section">
+		<div class="container">
+					
+			<div class="row">
+                <!--==========col1============-->
+                <div class="col1">
+                    <form>						
+                        Nome Completo:<br>
+                        <input  type="text" name="Nome" placeholder="Nome Completo" /><br>						
+                        <!--Inserindo foto(Escolher arquivo)-->
+                        Foto: <br>
+                        <input type="file" name="foto" placeholder="Sua foto"/> <br>
+                        RG:<br>
+                        <input type="number" name="RG" /><br>
+                        Pai:<br>
+                        <input type="text" name="Pai" placeholder="Nome do Pai" /><br><br>
+                        <!--Lista de paises-->
+                        Pais:<br>
+                        <select> <!--select cria uma lista para o usuário fazer a seleção-->
+                            <option>Argentina</option> <!--As opções são em <option>-->
+                            <option>Bolivia</option>
+                            <option>Brasil</option>
+                            <option>Chile</option>
+                            <option>Colômbia</option>
+                        </select><br><br>
+                        Telefone:<br>
+                        <input type="number" name="Telefone" /><br>
+                        E-mail:<br>
+                        <input type="text" name="email" />				
+                    </div>	
+                    <!--======col2=========-->
+                    <div class="col2">				
+                        Data de Nascimento:<br>
+                        <input type="date" name="nascimento" /><br>
+                        CPF:<br>
+                        <input type="number" name="CPF" /><br>
+                        Mãe:<br>
+                        <input type="text" name="Mae" placeholder="Nome da Mãe" /><br>
+                        Profissão:<br>
+                        <input type="text" name="Profissão" placeholder="Profissão" /><br>
+                        Celular:<br>
+                        <input type="number" name="Celular" />						
+                        <div class="botoes">
+                            <input type="submit" name="cadastrar" value="Cadastrar" />
+                            <input type="Reset" value="Limpar" />
+                        </div>	
+                    </form>
+				</div>
+			</div>		
+		</div>		
+    </section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
+

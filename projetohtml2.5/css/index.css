@@ -1,0 +1,71 @@
+/*configura o tamanho das imagens inseridas*/
+.img-responsive{
+    
+    width:100%;
+    height:5%;
+    border:2px solid orangered;
+}
+
+.header{
+    width: 100%;
+    height:40px;
+}
+
+/*retira as bolinhas azuis da barra de navegação*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*oque é esse a hover ?*/
+
+
+li{
+    display: inline;
+    float:left
+}
+
+/*Edita o desgin do retângulo do menu*/
+a{
+    display: block;
+    padding: 9px;
+    background-color: #140f0fa4;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    padding: 10px 16px; /*aumenta a largura do retângulo*/
+}
+
+/*muda a cor do menu quando passa o mouse*/
+li a:hover{
+    background-color:orangered;
+    color:white;
+}
+
+.container{
+    width:100%;
+    height: 400px; /*resolve o bug da Rua santa luzia* quando estava no 0 auto*/
+}
+
+.motosIMG{ 
+    float:left;
+    width:32%;  /*isso aqui tem que diminuir por conta do marging-bottom e padding-bottom*/
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding:5px;
+}
+
+.footer{
+    widows: 100%;
+    height: 0 auto;
+    
+    
+}
+/*imagens restantes do html*/
+img{
+    width: 3%;
+    height:4%;
+}

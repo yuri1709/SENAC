@@ -1,0 +1,19 @@
+body{
+    background-color: yellow ;
+}
+
+.container{
+    float: left;
+    padding: 10%;
+    left: 10%;
+    background-color: rgba(0, 153, 255, 0.2);
+    
+}
+.parte1{
+    float: left;
+}
+
+.parte2{
+    float: left;
+    
+}

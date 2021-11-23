@@ -1,0 +1,134 @@
+body{
+margin:0 auto;
+}
+
+.bar{
+    width:100%;
+    height:60px;
+}
+
+.drop{
+
+}
+
+ul{
+    width:500px; /*definindo o tamanho da lista*/
+    margin: 0 auto; /*centralizar a lista*/
+    list-style: none;/*retira os marcadores*/
+}
+
+ul li{
+    float: left;
+    background-color:green;
+    /*define posição*/
+    position: relative; /*absoluta, prende ele em algum lugar e se for relative ele se adapta a qualquer tela*/
+}
+
+ul li a{
+    display: block; /*tela*/
+    padding: 10px;/*distanciamento de um para o outro*/
+    text-decoration: none;
+    color:red; /*define a cor da fonte*/
+    border: 1px white solid; /*define a borda:parametro(tamanho,cor,solido*/
+}   
+
+/*o hover é para altera a cor ao passar o mouse em cima*/
+ul li:hover > a { /*esse > faz com seja selecionada um cor por vez*/
+    background-color:white;
+    color:green;
+}
+
+/*fazendo a configuração do sub menu (repare que o ul li ul está na mesma sequência do html)*/
+ul li ul{
+    display:none; /*posição dele na tela*/
+    position:absolute; /*será absoluto porque eu quero que esse sub-menu apareca onde eu lhe criei*/
+}
+
+/*o hover é para alterar a cor ao passar o mouse em cima*/
+ul li:hover ul{
+    width:110px;
+    display:block; /*como vai aparecer na tela*/
+
+
+}
+
+ul li ul li {
+    width: 110px;
+    cursor: pointer; /* exitem 17 tipos de cursores diferentes.(cursor= ponteiro do mouse)*/
+}
+
+li ul li :hover > a{
+    background-color:white;
+    color:green;
+}
+
+ul li ul li ul li{
+    display:none;
+}
+
+ul li ul li ul{
+    top:0;
+}
+
+ul li ul li :hover ul li {
+    background-color:white;
+    color:green;
+    display:block;
+    width:130px;
+    left:100%;
+}
+
+.container{
+    width: 45%;
+    float:left;
+    padding:5px;
+}
+
+body{
+    margin:0 auto;
+    font-family:arial, verdana;/*padrão internacional*/
+    font-size:small;
+}
+/*Configuração do texto*/
+p{
+    text-indent:2em;
+    text-align:justify;
+    word-spacing:10px; /*Espaçamento de uma palavra para a outra*/
+    text-transform: uppercase; /*vai botar toda as letras maiúsculas*/  
+    
+}
+/*container */
+#texto{
+    text-indent:2em;
+    text-align:justify;
+    word-spacing:10px;
+    text-transform: lowercase;
+}
+
+.footer{
+    width:100%;
+    height:60px;
+    clear:both; /*Comando para deixar lá em baixo*/
+}
+/*fazendo a sombra*/
+h1{
+    letter-spacing: 5px; /*Trabalha o espaçamento das letras*/
+    line-height:10px; /*fazer a distância da linha*/
+    text-shadow: 5px 5px 5px green; /*esse text-shadow faz um sombreamento no texto que está dentro do h1*/
+}
+
+#or{
+    margin-top:10px /*desce o container "or" atrâves do espaçamento do topo da margem*/
+}
+
+/*parte  do html
+a - faz o link da âncora
+ ul ou al pra fazer um marcador
+ toda vez que fazer uma barra de navegação: eu utilizo o <nav="">
+                                                          <ul>
+                                                          <li><a>   */
+
+/*Se eu quiser modificar somente um texto específico tenho que criar uma div ou um <p id="texto"> </p>*/                                                          
+a{
+
+}

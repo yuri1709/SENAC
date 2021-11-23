@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulários</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href="css/estilo8.css">
+</head>
+<body>
+<!--Vamos fazer formulários-->
+    <div class="container">
+    <form name="contato" method="POST">  <!--TENHO DOIS METODOS PRA ENVIAR O FORMULARIO: GET/POST-->
+        <!--Input-->
+        <span>Nome:</span>    
+        <input name="nome" type="text"placeholder="nome"> </br>
+        <!--Input Email-->
+        <span>Email:</span>
+        <input name="email" type="email"placeholder="seuemail@xxx.com"> </br>
+        <!--Input Password-->
+        <span>Senha:</span>
+        <input name="senha" type="password"placeholder="senha"> <!--Esse name é uma variável para o servidor ou seja esse name sera localizado no servidor--> </br>
+        
+        <!--Comentários-->
+        <span>Comentário</span>
+        <textarea  placeholder="Digite sua mensagem"></textarea> </br> <!--A tag fechamento tem que estar junto a tag abertura-->        
+        <span>Sexo:</span> </br>
+        <span>Masculino</span> 
+        <input type="radio" value="Masculino"> 
+        <span>Femenino</span>
+        <input type="radio" value="Feminino" > </br>
+        
+        <!--Estado civil-->
+        <span>Estado Civil:</span>
+        <input type="checkbox" value="solteiro">  
+        <span>Solteiro</span>
+        <input type="checkbox" value="casado">  
+        <span>Casado</span>
+        <input type="checkbox" value="divorciado">
+        <span>Divorciado</span>  
+        <input type="checkbox" value="viuvo">
+        <span>Viuvo</span>  </br>
+       <!--Buttons-->
+        <button name="enviar" type="button">Enviar </button>
+        <button name="limpar" type="reset" >Limpar</button>
+        
+</form> <!--FECHA -Formulário-->
+</div>   
+
+</body>
+</html>

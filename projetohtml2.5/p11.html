@@ -1,0 +1,59 @@
+<!--Hoje vamos aprender a fazer um slide de imagens-->
+<!--Ta bugado os slides-->
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href= "css/estilo11.css">
+    <link rel = "stylesheet" href= "https://www.w3schools.com/w3css/4/w3.css"> <!--Não sei para oque serve-->
+</head>
+<style>
+    .mySlides {display:none;}
+</style>
+<body>
+   
+
+<!--essa é uma classe do proprio w3s-->
+   <div class="w3-content w3-display-container">
+      <img class="mySlides" src="img/googleicon.png" style="width:100%">
+      <img class="mySlides" src="img/client.jpg" style="width:100%">
+      <img class="mySlides" src= "img/servidor1.jpg" style="width:100%">
+                
+      <!--função de fazer o botao funcionar/formulário-->          
+     <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">❮</button>
+     <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">❯</button>
+    </div> 
+    
+
+    <script>
+        //programando o botão
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        //mostrar na div oque estou usando na variavel(isso é uma biblioteca jquery)
+     
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");  //DOM ,fazendo com que ele 
+            if (n > x.lenght) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = x.lenght;
+            }
+            for (i = 0; i < x; i++) {
+                x[i].style.display = "none"; //posição de x que no caso seria a posição do slide          
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
+ 

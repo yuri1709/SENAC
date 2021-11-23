@@ -1,0 +1,38 @@
+#container1{
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #483D8B;
+    color:white;
+    font-family:arial;
+}
+
+.row
+    {
+    width:40%;
+    float:left;
+    padding:80px;
+    
+    }
+.row2
+    {
+    margin-top: 60px;
+    width:40%; 
+    float:left;
+    }
+
+
+body
+{
+    background-color:#483D8B;
+}
+    h2
+     {
+        color:yellow;
+        text-align:left;
+     }
+    p 
+     {
+        font-family: verdana;
+        font-size:20px;
+     }

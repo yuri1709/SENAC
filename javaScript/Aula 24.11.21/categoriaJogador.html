@@ -16,14 +16,18 @@
             idade = parseInt(idade);
 
             if(idade>=18){
-                document.write(`JOGADOR:${jogador}-CATEGORIA=ADULTO </br>`);
+                cat="ADULTO"
             }else
             if(idade>=10){
-                document.write(`JOGADOR:${jogador}-CATEGORIA=JUVENIL </br>`);
+                cat="JUVENIL"
             }else
             if(idade>=5){
-                document.write(`JOGADOR:${jogador}-CATEGORIA=INFANTIL </br>`);
+                cat="INFANTIL"  
+            }else
+            if(idade < 5){
+                cat="500 Internal Server Error"
             }
+            document.write(`JOGADOR:${jogador}-CATEGORIA=${cat} </br>`);
         };
     </script>
 </body>

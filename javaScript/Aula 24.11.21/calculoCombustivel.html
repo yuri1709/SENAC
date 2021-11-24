@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        
+     for(c=0;c<=1;c++){   
+        var tipoCombustivel =prompt("Tipo de combustível:A,G ou D:");
+        tipoCombustivel = tipoCombustivel;
+        var litros = prompt("Quanto deseja abastecer ?");
+        litros = parseFloat(litros);
+
+
+        if(tipoCombustivel == "D"){
+            tipo = "Diesel"
+            total = litros*4.81;
+        }else
+        if(tipoCombustivel == "G"){
+            tipo = "Gasolina"
+            total = litros*7.56;
+        }else
+        if(tipoCombustivel == "A"){
+            tipo = "Álcool"
+            total = litros*5.56;
+        }
+        document.write(`Você abasteceu ${litros}litros de ${tipo}</br> TOTAL R$:${total.toFixed(3)} reais</br>`);
+     
+     }    
+    </script>
+</body>
+</html>

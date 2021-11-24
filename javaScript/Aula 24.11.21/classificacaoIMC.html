@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peso e altura</title>
+</head>
+<body>
+    
+    <script>
+    //peso
+    //nome e altura
+    //mostra o mais alto e o mais baixo
+
+    //var altura
+    menorNomeH = "";
+    maiorNomeH = "";
+    menorH = 190;
+    maiorH = 0;
+    //var peso
+    menorNomePeso = "";
+    maiorNomePeso = "";
+    menorPeso = 190;
+    maiorPeso = 0;
+    
+    for(c=0;c<=1;c++){    
+        var nome = prompt("Nome:");
+        nome = nome;
+        var h = prompt("Altura:");
+        h = parseFloat(h);
+        var peso = prompt("Peso:");
+        peso = parseFloat(peso);
+    //Altura
+        if(h>maiorH) {
+            maiorH = h;
+            maiorNomeH = nome;
+           
+        }
+        if(h<menorH) {
+            menorH = h;
+            menorNomeH = nome;
+         
+        }
+    //Peso    
+        if(peso>maiorPeso){
+            maiorPeso = peso;
+            maiorNomePeso = nome;
+        }
+        if(peso<menorPeso){
+            menorPeso = peso;
+            menorNomePeso = nome;
+
+        }
+    //Imc
+        imc = peso/(h*h);
+        document.write(`Nome:${nome}</br>  Imc=${imc.toFixed(2)}</br>`);
+        console.log(imc);    
+        if(imc>=40){
+            document.write("Obesidade Mórbida"+"</br>");
+        }else 
+        if(imc>=35){
+            document.write("Obesidade Severa"+"</br>");
+        }else    
+        if(imc>=30){
+            document.write("Obesidade"+"</br>");
+        }else    
+        if(imc>=25){
+            document.write("Sobrepeso"+"</br>");
+        }else    
+        if(imc>=18.5){
+            document.write("Peso Normal"+"</br>");
+        }else    
+        if(imc<=18.5){
+            document.write("Peso Baixo"+"</br>");
+        }       
+       
+        document.write("======================================="+"</br>");
+    }
+
+
+    //Saída
+    document.write(`Maior altura: ${maiorNomeH}</br>  h= ${maiorH} </br> `);
+    document.write(`Menor altura: ${menorNomeH}</br>  h= ${menorH} </br> </br>`);    
+    
+    document.write(`Maior peso: ${maiorNomePeso}</br> peso= ${maiorPeso} </br>`);
+    document.write(`Menor peso: ${menorNomePeso}</br> peso= ${menorPeso} </br>`);
+
+    //document.write(`imc1`);
+    //document.write(`imc1`);
+    //document.write(`imc1`);
+
+
+    //document.write(`Imc= ${imc} </br>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogador</title>
+</head>
+<body>
+    <h2>Escolinha de Futebol do Juninho</h2>
+    <script>
+        for(c=1;c<=3;c++){
+            var jogador = prompt("jogador:");
+            jogador = (jogador);
+            var idade = prompt("idade:");
+            idade = parseInt(idade);
+
+            if(idade>=18){
+                document.write(`JOGADOR:${jogador}-CATEGORIA=ADULTO </br>`);
+            }else
+            if(idade>=10){
+                document.write(`JOGADOR:${jogador}-CATEGORIA=JUVENIL </br>`);
+            }else
+            if(idade>=5){
+                document.write(`JOGADOR:${jogador}-CATEGORIA=INFANTIL </br>`);
+            }
+        };
+    </script>
+</body>
+</html>

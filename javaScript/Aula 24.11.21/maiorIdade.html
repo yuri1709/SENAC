@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Média</title>
+</head>
+<body>
+    <script>
+    // elabore um programa que leia ,idade de 4 pessoas
+    // mostre a pessoa mais velha e a mais nova
+maisVelho=0;
+maisNovo=190;  
+nomeVelho="";
+nomeNovo="";  
+for (c=1;c<=4;c++) {
+    var nome = prompt("Nome:");   //precisa atribuir a variavel do prompt em nome = nome porque quando a variavel é atribuida somente pelo prompt  ela so fica no prompt.     
+    nome = nome; //importante fazer isso
+    var idade = prompt("Idade:");
+    idade = parseInt(idade);
+    if (idade>maisVelho) {
+        nomeVelho = nome;
+        maisVelho = idade;
+    }
+    if (idade<maisNovo) {
+        nomeNovo = nome;
+        maisNovo = idade;
+    }
+}    
+
+    document.write(`Nome mais velho: ${nomeVelho}</br>`);
+    document.write(`Idade mais velho: ${maisVelho}</br>`);
+    document.write(`Nome mais novo: ${nomeNovo}</br>`);
+    document.write(`Idade mais novo: ${maisNovo}</br>`);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Concessionária CARANGO VELHO</h2>
+    <script>
+        //Não está funcionando
+        var x = parseInt(x);
+        var y = parseInt(y);
+        /*Entrada*/
+       
+     for (c=1;c<=2;c++){     
+        var valorVeiculo = prompt("Valor do veículo:");
+        valorVeiculo = parseFloat(valorVeiculo);
+       
+        var anoVeiculo = prompt("Qual é o ano do veículo?");
+        anoVeiculo = parseInt(anoVeiculo);
+        /*Processo*/
+        if(anoVeiculo > 2010){
+            var valorComDesc =  valorVeiculo - (valorVeiculo*7/100);
+            var desconto = "7%";
+            x = 1 + x;
+
+        }else
+        if(anoVeiculo <= 2010){
+            var valorComDesc = valorVeiculo - (valorVeiculo*12/100);
+            var desconto = "12%";
+            y = 1 + y;
+        }
+
+        /*Sáida*/
+        document.write(`Valor inicial R$ ${valorVeiculo}<br>`)
+        document.write(`Valor com ${desconto} de desconto = R$ ${valorComDesc.toFixed(2)}<br>`);
+      
+     }
+
+       
+     
+      document.write(`Quantidade de carro posteriores a 2010: ${x} <br> Quantidade de carros até 2010: ${y}`);
+    </script>
+</body>
+</html>

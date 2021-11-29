@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var vVenda = prompt("Valor venda:");
+       
+       if(vVenda < 500){
+           pCusto = vVenda - (vVenda*10/100);
+       }else
+       if(vVenda >= 500){
+           pCusto = vVenda - (vVenda*8/100); 
+       }
+
+       document.write(`Preço de custo R$:${pCusto.toFixed(2)}`);
+    </script>
+</body>
+</html>

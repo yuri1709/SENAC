@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt("Número 1:");
+        var n2 = prompt("Número 2:");
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+/*se trocar && pelo || ele passa aceitar os números negativos*/
+        if( (n1 > n2) && (n1 > 0) ) {
+            document.write(`Maior e positivo`);   
+         }else
+         if( ( n2 > n1) && (n2 > 0 )) {
+             document.write(`Maior e positivo`);
+           }
+           
+           else{
+             document.write(`Número negativo`);
+           
+           }
+         
+
+        
+    </script>
+</body>
+</html>

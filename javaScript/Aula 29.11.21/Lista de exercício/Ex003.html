@@ -8,16 +8,17 @@
 </head>
 <body>
     <script>
-       var vVenda = prompt("Valor venda:");
+       var vPreco = prompt("Valor venda:");
        
        if(vVenda < 500){
-           pCusto = vVenda - (vVenda*10/100);
+           pCusto =vPreco*10/100;
        }else
        if(vVenda >= 500){
-           pCusto = vVenda - (vVenda*8/100); 
+           pCusto = vPreco*8/100; 
        }
-
+       vTotal = pCusto + vPreco;
        document.write(`Preço de custo R$:${pCusto.toFixed(2)}`);
+       document.write(`Valor a pagar R$:${vTotal}`)
     </script>
 </body>
 </html>

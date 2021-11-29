@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("A:");
+        var b = prompt("B:");
+        var c = prompt("C:");
+
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+
+        if (((a < (b + c )) && (a >(b-c)))) {
+            document.write("É um triângulo");
+         if ((a == b) && (b == c)) {
+            document.write("Equilátero");
+         }else
+        if ((a==b)||(b==c)||(a==c)){
+            document.write("Isósceles");    
+          }else
+          if((a !=b) && (b !=c) && (a!=c)){ 
+              document.write("Escaleno");
+          }
+        
+        }else{
+            document.write("Não é um triângulo");
+        }
+    </script>
+</body>
+</html>

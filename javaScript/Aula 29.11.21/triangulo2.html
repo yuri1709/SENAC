@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("a:");
+        var b = prompt("b:");
+        var c = prompt("c:");
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        
+        if( (a+b<c) || (a+c<b) || (b+c < a) ) {
+            document.write("Não temos um triângulo");
+        }
+        else{
+        if( (a==b) && (a==c) && (b==c)){
+            document.write("Equilátero: três lados iguais");
+        }else
+        if( (a==b) || (a==c) || (b==c) ){
+            document.write("Isósceles: dois lados iguais");
+        }
+        else{
+            document.write("Escaleno");
+        }
+       } 
+    </script>
+</body>
+</html>

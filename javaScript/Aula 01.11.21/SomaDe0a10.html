@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      soma=0; /*tem que iniciar zero pra não dar erro*/
+        
+        for (cont=0;cont<=10;cont++){
+            soma = soma + cont;
+            if (cont<10){ 
+            document.write(`${cont}+`);
+        }else
+        if (cont == 10){  
+            document.write(`${cont}=`);
+        }   
+    }
+    document.write(`${soma}`);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        contadorF=0;
+        contadorD=0;
+        for(cont=1;cont<=3;cont++){  
+        //Entrada de dados
+            var n = prompt("Insira o número:");
+            n = parseInt(n);
+       //Processo
+            if((n>=10)&&(n<=60)){
+                contadorD++; 
+            }else{
+                contadorF++;
+            }  
+        }
+        document.write("Números dentro do intervalo:"+contadorD+"<br>");
+        document.write("Números fora do intervalo:"+contadorF);
+
+    </script>
+</body>
+</html>

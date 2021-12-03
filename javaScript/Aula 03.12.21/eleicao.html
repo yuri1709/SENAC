@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       tv1 = 0;
+       tv2 = 0;
+       tv3 = 0;
+       tv4 = 0;
+       tv5 = 0;
+       tv6 = 0;
+
+       pv1=0; pv2=0; pv3=0;
+    pv4=0; pv5=0; pv6=0;
+
+        //processo
+        //TOTAL DE 10 ELEITORES
+     for(cont=1;cont<=10;cont++) {  
+        
+        //Entrada
+        var voto = prompt(`1.Candidato 1 / 2.Candidato 2 / 3.Candidato 3 / 4.Candidato 4 / 5.Voto nulo" / 6.Voto em branco`);
+        voto = parseInt(voto);
+
+        //candidato1 
+            if (voto == 1){
+                tv1 = tv1 +1;  
+            }else
+        //candidato2
+        if (voto== 2){
+                tv2 = tv2 +1;           
+            }else
+        //candidato3
+        if (voto == 3){
+                tv3 = tv3 +1;              
+            }else
+        //candidato4
+        if (voto == 4){
+                tv4 = tv4 +1;
+     
+        }else
+        //voto nulo
+        if (voto== 5){
+            tv5 = tv5 +1;
+
+        }else
+        //voto branco
+        if (voto == 6){
+            tv6 = tv6 + 1;
+        }else
+        if ((voto>6)&&(voto<1)){
+            document.write("Voto inválido!")
+        }
+     }
+    //Calculo porcentagem
+     pv1 =(tv1/10)*100; pv2=(tv2/10)*100; pv3=(tv3/10)*100;
+     pv4=(tv4/10)*100; pv5=(tv5/10)*100; pv6=(tv6/10)*100;
+        //Saida
+       document.write(`TOTAL DE VOTOS <br>`);
+       document.write(`Total de votos Candidato 1=${tv1} <br>`);
+       document.write(`Total de votos Candidato 2=${tv2} <br>`);
+       document.write(`Total de votos Candidato 3=${tv3} <br>`);
+       document.write(`Total de votos Candidato 4=${tv4} <br>`);
+       document.write(`Total de votos nulos=${tv5} <br>`);
+       document.write(`Total de votos brancos=${tv6}<br>`);
+       //Saida-Percentual
+       document.write(`PERCENTUAL DE VOTOS nulo<br>`);
+       
+       /*pv1 =(tv1/10)*100; pv2=(tv2/10)*100; pv3=(tv3/10)*100;
+pv4=(tv4/10)*100; pv5=(tv5/10)*100; pv6=(tv6/10)*100;
+document.write("Votos candidato 1- "+tv1+"<br>");
+document.write("% votos candidato1- "+pv1+"%<br>");
+document.write("Votos candidato 2- "+tv2+"<br>");
+document.write("% votos candidato2 -"+pv2+"%<br>");
+document.write("Votos candidato 3 -"+tv3+"<br>");
+document.write("% votos candidato3-"+pv3+"%<br>");
+document.write("Votos candidato 4- "+tv4+"<br>");
+document.write("% votos candidato4- "+pv4+"%<br>");
+document.write("Votos Nulo -"+tv5+"<br>");
+document.write("% votos nulo- "+pv5+"%<br>");
+document.write("Votos Brancos -"+tv6+"<br>");
+document.write("% votos em branco-"+pv6+"%<br");
+*/
+    </script>
+</body>
+</html>

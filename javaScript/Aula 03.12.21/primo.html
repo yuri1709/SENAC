@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Entrada
+        document.write("Verificar se o número é par ou ímpar"+"<br>")
+        var n1 = prompt("Insira um número:");
+        n1 = parseInt(n1);
+        div = 0;
+        console.log("n1="+n1);
+        //Processo
+        // Todos números primos são ímpares com excessão do número 2.
+        //%= resto   /=divisão
+        for(c=0;c<=n1;c++){
+            if(n1 %c ==0){
+                div++;
+                console.log("div="+div);
+            }
+        }
+        //
+        
+        if (div ==2){
+            document.write("Número primo"+"<br>");
+        }else{
+            document.write("Não é primo"+"<br>");
+        }
+        
+        console.log(n1);
+    </script>
+</body>
+</html>

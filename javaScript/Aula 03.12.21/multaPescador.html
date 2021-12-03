@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Multa a ser pagar por kg de peixe fora do limite estabelicido
+        //Definindo var
+        
+        
+        for(cont=0;cont <=1;cont++){  //loop de pescadores
+        //Entrada
+      
+        var nome = prompt("Nome pescador:");
+        var KgPescado = prompt("Quantidade em quilos pescados Kg:");
+        KgPescado = parseFloat(KgPescado);
+
+        msg = 0;    //bug
+        //Processo
+        outLimit = 0;
+        if(KgPescado > 50){
+            outLimit = KgPescado - 50;
+            multa = outLimit*4; //Valor da multa
+        }else{
+            msg = "Você está dentro do limite!<br>";
+            multa=0;
+             // devemos zerar a variavel se cair nesta condição para que não seja contada no próximo looping
+        }
+        //Total de peixes pescado
+            //vamos supor que cada peixe pesa 2 quilos
+        QtdTotal = KgPescado/2;
+        
+        //Total de peixes excedentes
+        QtdOutLimit = outLimit/2;
+
+        //Saída
+        document.write("==========RELATÓRIO========= <br>");
+        document.write(msg);
+        document.write(`Nome do pescador:${nome}<br>`);
+        document.write(`Total de peixes pescados = ${QtdTotal} <br>`);
+        document.write(`Total de peixes excedentes = ${QtdOutLimit} <br>`);
+        document.write(`Valor multa R$ ${multa} <br>`);
+        
+        KgPescador= 0;
+        multa = 0;
+    }
+    // Bugado,ta dando o dobro do valor de multa!
+    //bug2 ta aparecendo um 0 antes do nome
+
+    </script>
+</body>
+</html>

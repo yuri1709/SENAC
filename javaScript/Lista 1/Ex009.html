@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rendimento</title>
+</head>
+<body>
+    <script>
+   //ENTRADA
+   var capital = prompt("Valor depósito:");
+   capital = parseFloat(capital);
+   
+   //Processo
+   j = capital * (0.70/100) * 1;
+   rendi = capital + j;     
+   //Saida
+   document.write(`Valor depósitado: ${capital.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br>`);
+   document.write(`Rendimento após 1 mês: ${rendi.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br>`);
+   
+    </script>
+</body>
+</html>

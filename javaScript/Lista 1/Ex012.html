@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarroNovo</title>
+</head>
+<body>
+    <h2>Loja</h2>
+    <script>
+   //ENTRADA
+   var vValorFabrica = prompt("Valor de fábrica R$:");
+   vValorFabrica = parseFloat(vValorFabrica);
+   
+ 
+   //processo
+   vValorDistribuidor =  ( (vValorFabrica*28)/100);
+   vValorImpostos =  ( (vValorFabrica*45)/100);
+
+   vValorCarro = vValorFabrica + vValorDistribuidor + vValorImpostos;
+
+   //Saida
+   document.write(`Valor total do carro = ${vValorCarro}`);
+  
+
+    
+   
+
+
+ 
+    </script>
+</body>
+</html>

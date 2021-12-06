@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rendimento</title>
+</head>
+<body>
+    <h2>Loja mamão com Açucar</h2>
+    <script>
+   //ENTRADA
+    var preco = prompt("Valor da compra R$:");
+    preco = parseFloat(preco);
+
+    //Processo
+    prestacao = preco/5;
+    //saida
+    document.write(`Valor à vista: ${preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br>`);
+    document.write(`Parcelado 5X de  ${prestacao.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br>`);
+    </script>
+</body>
+</html>

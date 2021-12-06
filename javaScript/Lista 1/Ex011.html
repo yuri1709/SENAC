@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreçoDeCusto</title>
+</head>
+<body>
+    <h2>Loja</h2>
+    <script>
+   //ENTRADA
+    var valor = prompt("Preço de custo do produto R$");
+    valor = parseFloat(valor);
+    var acres = prompt("Percentual de acréscimo sob o produto %:");
+    acres = parseFloat(acres);
+
+    //Processo
+    acres = valor*(acres/100);//Essa configuração não pode utilizando dentro de um loop neste caso.
+    total = acres + valor;
+
+    //Saída
+    document.write(`Total: ${total.toLocaleString('pt-BR',{style:`currency`,currency:'BRL'})}<br>`);
+    document.write(`Somos transparentes com os nosso clientes! <br>
+                    Segue abaixo o cálculo do valor sendo pago por você; <br>`);
+    document.write(`Preço de custo: ${valor.toLocaleString('pt-BR',{style:`currency`,currency:'BRL'})}<br>`);
+    document.write(`Acréscimo no valor de custo:${acres.toLocaleString('pt-BR',{style:`currency`,currency:'BRL'})}<br>`);    
+    </script>
+</body>
+</html>

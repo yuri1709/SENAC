@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conta de luz</title>
+</head>
+<body>
+    <script>
+
+
+    for(c=0;c <= 6;c++) {  
+        var tipoCliente = prompt("1.Residencial / 2.Comércio / 3.Industrial");
+        tipoCliente = tipoCliente;
+        var h = prompt("Quantidade de horas:");
+        h = parseFloat(h);
+        
+        if (tipoCliente == 1){
+            valorPagar = h * 6.60;
+            tipoCliente = "Residencial";
+        }else
+            if (tipoCliente == 2){
+                valorPagar = h* 4.48;
+                tipoCliente = "Comercial";
+            }else
+                if (tipoCliente == 3){
+                    valorPagar = h*11.29;
+                    tipoCliente = "Industrial";
+                }
+        document.write(`Tipo de cliente: ${tipoCliente}<br>`);
+        document.write(`Valor a pagar ${valorPagar.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} <br><br>`);
+     }
+    </script>
+ 
+</body>
+</html>

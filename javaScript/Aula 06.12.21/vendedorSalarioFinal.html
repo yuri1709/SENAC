@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conta de luz</title>
+</head>
+<body>
+    <script>
+    for(c=0;c<=4;c++){     
+        //entrada
+        var name = prompt("Nome do Funcionário");
+        
+        salFixo = prompt("Salário fixo:");
+        salFixo = parseFloat(salFixo);
+        
+        tVendas = prompt("Valor total em vendas:");
+        tVendas = parseFloat(tVendas);
+
+        //Processo
+        if (tVendas > 20000){
+            salFinal = salFixo*1.15;
+        }else
+        if (tVendas <= 20000){
+            salFinal = salFixo*1.05;
+        }
+        
+        //Saída
+        document.write(`O vendedor(a): ${name} <br>`);
+        document.write(`Salário fixo = ${salFixo.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br>`);
+        document.write(`Salário final = ${salFinal.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}<br><br>`);
+    }
+    </script>
+ 
+</body>
+</html>

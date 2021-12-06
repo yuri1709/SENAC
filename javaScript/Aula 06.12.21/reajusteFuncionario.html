@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        nSalM=0;  ajuse=0; 
+        //VERIFICAR SE O CÁLCULO PORCENTAGEM ESTÁ CORRETA.
+    for(c=0;c<=2;c++){  
+        //Entrada
+        var salM = prompt("Salário"+ c +"R$");
+        salM = parseFloat(salM);
+        //Processo
+        if (salM >= 22000) {
+            ajuste = salM*0.10; 
+        }else
+        if ((salM >= 11000) && (salM <= 22000)) {
+            ajuste = 0.15*salM;
+        }else
+        if ((salM >=3300) && (salM < 11000)) {
+            ajuste = 0.20*salM;
+        }else
+        if (salM < 3300){
+            ajuste = 0.50*salM;
+        }
+        nSalM=  salM + ajuste;
+        console.log("ajuste"+c +" "+ajuste);
+        //Saída   
+         document.write(`Salário inicial  ${salM.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} <br>`) ;      
+         document.write(`Reajuste foi de  ${ajuste.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} <br>`);    
+         document.write(`Salário + ajuste =  ${nSalM.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})} <br> <br>`);    
+    }
+       
+    </script>
+</body>
+</html>

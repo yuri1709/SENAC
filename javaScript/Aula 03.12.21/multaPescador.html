@@ -10,21 +10,23 @@
     <script>
         // Multa a ser pagar por kg de peixe fora do limite estabelicido
         //Definindo var
-        
-        
+        msg = "";  //resolve o bug que aparece o 0 do lado
+          //bug
         for(cont=0;cont <=1;cont++){  //loop de pescadores
         //Entrada
-      
+          
         var nome = prompt("Nome pescador:");
         var KgPescado = prompt("Quantidade em quilos pescados Kg:");
         KgPescado = parseFloat(KgPescado);
 
-        msg = 0;    //bug
+      
         //Processo
         outLimit = 0;
         if(KgPescado > 50){
+            multa=0;
             outLimit = KgPescado - 50;
             multa = outLimit*4; //Valor da multa
+            console.log("multa = "+multa);
         }else{
             msg = "Você está dentro do limite!<br>";
             multa=0;
@@ -48,8 +50,8 @@
         KgPescador= 0;
         multa = 0;
     }
-    // Bugado,ta dando o dobro do valor de multa!
-    //bug2 ta aparecendo um 0 antes do nome
+    
+    //bug2 ta aparecendo um 0 antes do nome(corrigido)
 
     </script>
 </body>

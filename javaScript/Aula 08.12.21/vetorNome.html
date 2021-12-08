@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VetorNome 6 posições de memoria</title>
+</head>
+<body>
+    <script>
+        var nome = new Array();
+        var i,p;
+        for (i=0;i<5;i++){
+            p = nome.length;/*a largura vai aumentando a cada looping*/
+            /*obter o tamanho*/
+            nome[p] = "Nome " +i;
+        }
+
+        for(i=1; i<=nome.length; i++){
+            document.write(nome[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

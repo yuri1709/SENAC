@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bairros</title>
+</head>
+<body>
+    <script>
+        var bairro = new Array();
+      
+        //Entrada
+        for (i=1;i<=10;i++){
+            bairro[i] = prompt(i+".Bairro:");
+            bairro[i] = bairro[i];
+        }
+        //Saída
+        document.write(`Bairros digitados:`);
+        for (i=1;i<=10;i++){
+            if(i < 9){ 
+            document.write(`${bairro[i]},`);
+            }else
+            if(i == 9){
+            document.write(`${bairro[i]} e `)    
+            }else
+            if(i<=10) {  
+                document.write(`${bairro[i]}.`)
+            }
+        }
+    </script>
+</body>
+</html>

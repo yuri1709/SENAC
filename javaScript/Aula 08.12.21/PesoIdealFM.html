@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    QtdeF=0;QtdeH=0;
+    
+    for(p=1;p<=2;p++){ //Quantidade de pessoas
+        var sexo = prompt("Sexo: M / F");
+        var h = prompt("Altura:");
+        h = parseFloat(h);
+        sexo = sexo.toUpperCase();
+        //processo
+        if(sexo == 'M'){
+            pesoIdeal = (72.7*h)-58; 
+            QtdeH++; //contador de homens
+        }else
+        if(sexo =='F'){
+            pesoIdeal = (62.1*h)-44.7;
+            QtdeF++;//contador de mulheres
+        }else{
+            alert(`Nenhuma opção foi selecionada!`);
+            p--;
+        }  
+        document.write("Sexo:"+sexo+"  peso ideal:"+pesoIdeal.toFixed(2)+"<br>"); 
+    }
+    //Saída  
+    document.write(`Total de homens que utilizaram o aplicativo: ${QtdeH}<br>`);
+    document.write(`Total de mulheres que utilizaram o aplicativo: ${QtdeF}`);  
+    
+    </script>
+</body>
+</html>

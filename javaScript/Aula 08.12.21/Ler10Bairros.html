@@ -9,22 +9,24 @@
 <body>
     <script>
         var bairro = new Array();
-      
+         n=5;
         //Entrada
-        for (i=1;i<=10;i++){
+        for (i=1;i<=n;i++){
             bairro[i] = prompt(i+".Bairro:");
             bairro[i] = bairro[i];
         }
         //Saída
         document.write(`Bairros digitados:`);
-        for (i=1;i<=10;i++){
-            if(i < 9){ 
-            document.write(`${bairro[i]},`);
+        for (i=1;i<=n;i++){
+            if(i < n-1){ 
+          
+            document.write(`${bairro[i]}, `);
+          
             }else
-            if(i == 9){
+            if(i == n-1){
             document.write(`${bairro[i]} e `)    
             }else
-            if(i<=10) {  
+            if(i<=n) {  
                 document.write(`${bairro[i]}.`)
             }
         }

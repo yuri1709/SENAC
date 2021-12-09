@@ -10,8 +10,8 @@ class AumentoSalario{
     }
 }
 const salarioFinal = new AumentoSalario();
-
-var meta = 20;
+//nao esta funcionando
+meta = 10;
 salarioFinal.produtividade=30;
 
 if (this.produtividade >= meta){ 

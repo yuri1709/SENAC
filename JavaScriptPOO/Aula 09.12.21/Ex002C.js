@@ -2,14 +2,11 @@
 se a média for maior que 5 exiba a mensagem de aluno aprovado, 
 caso contrario exiba c msg de aluno reprovado*/ 
 class Aluno {
-    nota1;
-    nota2;
-    nota3;
-    nota4;
-
+    nota= [10,10,10,10];    
     media(){
-        return (this.nota1 + this.nota2 + this.nota3 + this.nota4)/4;
-    } 
+        return (this.nota1 + this.nota2 + this.nota3 + this.nota4)/this.nota.lenght;
+    }
+       
 }
 const mediaFinal = new Aluno();
 //Entrada dos valores das notas

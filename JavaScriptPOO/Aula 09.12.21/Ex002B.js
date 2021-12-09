@@ -14,10 +14,13 @@ const salarioFinal = new AumentoSalario();
 meta = 10;
 salarioFinal.produtividade=30;
 
-if (this.produtividade >= meta){ 
+if (salarioFinal.produtividade >= meta){ 
 salarioFinal.salario=1000;
 console.log("Parabéns João! Você atingiu a meta!");
 console.log(`Seu novo salário:${salarioFinal.aumento().toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}`);
 }else {
     console.log("Que pena João,você não atingiu a meta.Tente outra vez!");
 }
+
+console.log("meta"+meta);
+console.log("produtividade"+ salarioFinal.produtividade);

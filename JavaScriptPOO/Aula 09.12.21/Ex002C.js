@@ -1,23 +1,27 @@
 /* Receba 4 notas de um aluno e calcule a média, 
 se a média for maior que 5 exiba a mensagem de aluno aprovado, 
 caso contrario exiba c msg de aluno reprovado*/ 
-class Aluno {
-    nota= [10,10,10,10];    
-    media(){
-        return (this.nota1 + this.nota2 + this.nota3 + this.nota4)/this.nota.lenght;
-    }
-       
-}
-const mediaFinal = new Aluno();
-//Entrada dos valores das notas
-mediaFinal.nota1=10;
-mediaFinal.nota2=0;
-mediaFinal.nota3=0;
-mediaFinal.nota4=5;
+class CalculoMedia {
+    nota=[]; 
 
-//Condição de aprovação
-mediaFinal.media() >=5.0 ? console.log("Parabéns!Aprovado"):console.log("Você foi reprovado!"); 
+    media(){
+        let somaNota = 0;
+        for(let i=0;i<=3;i++){  //A quantidade de loops tem que ser igual ao tamano do vetor.
+            somaNota = this.nota[i] + somaNota;
+        }
+        somaNota = somaNota/this.nota.length; 
+        //Condição de aprovação
+        somaNota >=5.0 ? console.log("Parabéns!Aprovado"):console.log("Você foi reprovado!"); 
+        return somaNota.toFixed(2);   
+    }
+}
+const alunoUm = new CalculoMedia();
+//Entrada dos valores das notas
+alunoUm.nota[0]=5;
+alunoUm.nota[1]=5;
+alunoUm.nota[2]=5;
+alunoUm.nota[3]=5;
 
 //Saída
-console.log("Média Final do aluno ="+mediaFinal.media().toFixed(2));
+console.log("Média Final do aluno ="+alunoUm.media());
 

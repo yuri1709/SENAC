@@ -32,7 +32,7 @@ class Calculadora {
 
 }
 // instanciação da classe(como tivesse ativando o meu molde.)
-const calculadoraDoTux = new Calculadora(); //como é uma classe devo por parênteses.
+const calculadoraDoTux = new Calculadora(); //como é uma classe devo por parênteses.(Constante GLOBAL)
 //Utilizando a classe
 calculadoraDoTux.valor1 =20;
 calculadoraDoTux.valor2 =10;

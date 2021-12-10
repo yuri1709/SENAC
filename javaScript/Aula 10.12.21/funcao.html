@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        for(c=1; c<=2;c++){
+            var num1 = prompt("N1:");
+            var num2 = prompt("N2:");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            soma();
+            sub();
+            mult();
+            div();
+            exp();
+        } 
+        function soma(){ 
+            calc = num1+num2;//variavel de retorno
+            document.write("Soma="+calc+"<br>")
+        }
+        function sub(){ 
+            calc = num1-num2;//variavel de retorno
+            document.write("Subtração="+calc+"<br>")
+        }
+        function mult(){ 
+            calc = num1*num2;
+            document.write("Multiplicação="+calc+"<br>")
+        }
+        function div(){ 
+            calc = num1/num2;//variavel de retorno
+            document.write("Divisão="+calc+"<br>")
+        }
+        function exp(){
+            calc = num1**num2;
+            document.write("Exponenciação="+calc+"<br>");
+        }
+    </script>
+</body>
+</html>

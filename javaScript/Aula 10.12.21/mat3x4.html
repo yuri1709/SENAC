@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        matrizA = new Array ( [2,1,0,5],
+                              [1,3,4,5], 
+                              [10,12,13,14]
+                            );
+
+    for (l=0;l<3;l++){
+        for (c=0;c<4;c++){
+            matrizA[l][c] = parseInt(matrizA[l][c]);//FAZENDO A CONVERSÃO PARA INTEIRO
+            document.write(matrizA[l][c]);
+        }
+        document.write("</br>");
+    }                              
+    </script>
+</body>
+</html>

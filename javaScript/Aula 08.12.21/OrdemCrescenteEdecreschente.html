@@ -13,6 +13,22 @@
         for(i=0; i<5 ; i++){
             document.write(num[i]+",");
         }
+
+        for(j=0;j<=4;j++){
+            k = j + i;
+            for(k=0;k<=4;k++){
+                if(num[k] > num[j]){
+                    aux = num[k];
+                    num[k] = num[j];
+                    num[j] = aux;
+                }
+            }
+        }
+        document.write("<br>Vetor em ordem crescente: <br>")
+        for(i=0;i<=4;i++){
+            document.write(`${num[i]}<br>`);
+        }
+
     </script>
 </body>
 </html>

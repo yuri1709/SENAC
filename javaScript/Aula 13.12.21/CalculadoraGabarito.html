@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<form name="calculo">
+<table border=6>
+<tr> <td>
+<input name="input"   size="18" >
+</td> </tr>
+<tr> <td>
+<input type="button" name="um" value="  1  " onclick="calculo.input.value += '1'">
+<input type="button" name="dois" value="  2  " onclick="calculo.input.value += '2'">
+<input type="button" name="tres" value="  3  " onclick="calculo.input.value += '3'">
+<input type="button" name="mais" value="  +  " onclick="calculo.input.value += ' + '">
+<br>
+<input type="button" name="quatro" value="  4  " onclick="calculo.input.value += '4'">
+<input type="button" name="cinco" value="  5  " onclick="calculo.input.value += '5'">
+<input type="button" name="seis" value="  6  " onclick="calculo.input.value += '6'">
+<input type="button" name="menos" value="  -   " onclick="calculo.input.value += ' - '">
+<br>
+<input type="button" name="sete" value="  7  " onclick="calculo.input.value += '7'">
+<input type="button" name="oito" value="  8  " onclick="calculo.input.value += '8'">
+<input type="button" name="nova" value="  9  " onclick="calculo.input.value += '9'">
+<input type="button" name="multip" value="  x  " onclick="calculo.input.value += ' * '">
+<br>
+<input type="button" name="limpar" value="  c  " onclick="calculo.input.value = ''">
+<input type="button" name="zero" value="  0  " onclick="calculo.input.value += '0'">
+<input type="button" name="igual" value="  =  " onclick="calculo.input.value = eval(calculo.input.value)">
+<input type="button" name="divisap" value="  /   " onclick="calculo.input.value += ' / '">
+<br>
+</td> </tr>
+</table>
+</form></body>
+</html>

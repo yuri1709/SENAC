@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/Aula 13.12.21/js/soma.js">
+    <link href="Formulario.css"  rel="stylesheet">
+    <title>Document</title>
+</head>
+<!--Aprendendo a criar um formulário-->
+<script> //pode deixar o script dentro do head.
+    //retorno do formulário html obrigatorio o name do form
+    function SOMA(){ 
+        var nu1,nu2,so;
+        nu1 = calculo.n1.value; //Assim que recebe o variavel do formulario html 
+        nu2 = calculo.n2.value; //a palavra calculo se refere ao nome do fomulario html
+        nu1 = parseInt(nu1);
+        nu2 = parseInt(nu2);
+        so = nu1+nu2;
+        calculo.res.value = so; //recebe so
+    }
+    function SUB(){ 
+        var nu1,nu2,so;
+        nu1 = calculo.n1.value; //Assim que recebe o variavel do formulario html 
+        nu2 = calculo.n2.value; //a palavra calculo se refere ao nome do fomulario html
+        nu1 = parseInt(nu1);
+        nu2 = parseInt(nu2);
+        sub = nu1-nu2;
+        calculo.res2.value = sub; //TEM que mudar o res para cada operação.
+    }
+    function MULT(){ 
+        var nu1,nu2,so;
+        nu1 = calculo.n1.value; //Assim que recebe o variavel do formulario html 
+        nu2 = calculo.n2.value; //a palavra calculo se refere ao nome do fomulario html
+        nu1 = parseInt(nu1);
+        nu2 = parseInt(nu2);
+        mult = nu1*nu2;
+        calculo.res3.value = mult; //TEM que mudar o res para cada operação.
+    }
+    function DIV(){ 
+        var nu1,nu2,so;
+        nu1 = calculo.n1.value; //Assim que recebe o variavel do formulario html 
+        nu2 = calculo.n2.value; //a palavra calculo se refere ao nome do fomulario html
+        nu1 = parseInt(nu1);
+        nu2 = parseInt(nu2);
+        div = nu1/nu2;
+        calculo.res4.value =div; //TEM que mudar o res para cada operação.
+    }
+    //Tabuada
+    function table(){
+        var nu1,nu2,tabuada,i;
+        nu1 = calculo.n1.value;
+        nu1 = parseInt(nu1);
+        i = parseInt(i);
+        for(i=0;i<=10;i++){
+            tabuada= nu1*i;
+            document.write(`${i}x${nu1}=${tabuada} <br>`);
+        }
+        calculo.res5.value=tabuada;
+    }
+    function block(){
+    
+    }
+
+</script>
+<body>
+    <form name="calculo"> <!--Importante nomear o formulario-->
+        <span>Número 1:</span>
+        <input name="n1" type="number"> <br> <!--o name"n1"e name"n2" serão utilizados no javascript-->
+        <span>Número 2:</span>
+        <input name="n2" type="number"> <br>
+        <input type="button" value="Soma" name="soma" onclick="javascript:SOMA();">  <!--A função nao pode ter o mesmo nome da variavel-->
+        <input name="res">
+        <input type="button" value="Subtração" name="sub" onclick="javascript:SUB();">
+        <input name="res2">
+        <input type="button" value="Multiplicação" name="multi" onclick="javascript:MULT();">
+        <input name="res3">
+        <input type="button" value="Divisão" name="divisao" onclick="javascript:DIV();">
+        <input name="res4">
+        <INPUT type="reset"  name="divisao" value="Limpar">    
+        <br>
+        <input type="button" value="Tabuada" name="tabuada" onclick="javascript:table();"> 
+        <!--TESTE-->
+        <input action= "CalculadoraGabarito.html" type="submit" value="teste" name="newPage"/>
+    </form>
+    <!--Botao pra ir para outra página-->
+    <form action="CalculadoraGabarito.html">
+        <input type="submit" value="Go to Calculadora" name="newPage"/>
+    </form>
+</body>
+</html>

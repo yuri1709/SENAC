@@ -1,10 +1,11 @@
 class Calculadora{
     valor1; 
     valor2;
-    _resultado=0; //O underline "_" na frente de um tributo indica que ele é privado.(roleplay kkk)
+    _resultado; //O underline "_" na frente de um tributo indica que ele é privado.(roleplay kkk)
     //o atributo privado só sera utilizado dentro da classe ou seja não podemos atribuir valores pra ele fora da classe.
     //Metodo de soma
     
+    //--------------------------------------------------------------
     //pegando o atributo privado(aprendendo a modificar)
         //Encapsulamento - Maneira de se manipukar atributos privados fora da classe.
         //Get - Pega o valor desse atributo(retornar o valor desse atributo)
@@ -12,7 +13,13 @@ class Calculadora{
                 return this._resultado;
             }
 
-    
+            //Agora vamos setar o valor do atributo privado _resultado
+            //Set - Altera o valor do atributo privado
+            set encapResult(valor){
+                this._resultado = valor;
+            }
+
+    //----------------------------------------------------------------
     soma(numUm, numDois){
         let resultado = numUm + numDois ;
         return resultado;
@@ -34,8 +41,12 @@ class Calculadora{
 
 const cGabarito = new Calculadora();
 
-//Como exibir o _resultado
-console.log(cGabarito.encapResult);
+//Exibindo e mostrando o valor
+    //Como exibir o _resultado
+    cGabarito.encapResult= "teco-teco";
+    console.log(cGabarito.encapResult);
+//--------------------------.------------------
+
 
 /*cGabarito._resultado= 20;* nao pode fazer isso,pq o atributo é privado/
 

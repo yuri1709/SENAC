@@ -5,6 +5,16 @@ class Calculadora{
     //o atributo privado só sera utilizado dentro da classe ou seja não podemos atribuir valores pra ele fora da classe.
     //Metodo de soma
 
+
+
+    //Metodo padrão de toda a classe.
+    //Criando um construtor:(os atributos são as mãos de obra dentro da classe).
+    //Metodo que é carregado toda vez que a classe é instanciada.
+    constructor(){//Constructor é vida,por exemplo se eu pegar dados de um formulario coloco aqui.
+        this.valor1 = prompt("Informe o valor 1:");
+        this.valor2 = prompt("Informe o valor 2:");
+    }
+
     
     //--------------------------------------------------------------
     //pegando o atributo privado(aprendendo a modificar)
@@ -42,7 +52,7 @@ class Calculadora{
 
 const cGabarito = new Calculadora();
 
-//Exibindo e mostrando o valor do atributo privado
+//Exibindo e mostrando o valor
     //Como exibir o _resultado
     cGabarito.encapResult= "teco-teco";
     console.log(cGabarito.encapResult);

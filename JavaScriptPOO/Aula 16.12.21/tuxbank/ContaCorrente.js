@@ -14,7 +14,8 @@ class ContaCorrente {
             let deposito = prompt("Informe o valor do deposito: ");
             this.depositar(deposito);
         }else if (this.operacao == 'transferir'){
-            this.trasnferir(transfere);
+            let transfere = prompt("Informe o valor de trânsferencia: ")
+            this.trasnferir(transfere) ;
         }else {
             alert("Operaçao não realizada!");
         }

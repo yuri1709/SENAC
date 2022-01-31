@@ -41,6 +41,6 @@
         ?>
     <br>
     <a href="formulario1.php">Formulario1</a> <!--não precisa -->
-
+    <a href="formulario2.php">Formulario2</a>
 </body>
 </html>

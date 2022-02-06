@@ -12,6 +12,7 @@
         <a href="cadastroCliente.php">Cadastro Cliente</a>
         <a href="consultaCliente.php">Consulta Cliente</a>
         <a href="cadastroAluno.php">Cadastro Aluno</a>
+        <a href="cadastroAlunoInteresse.php">Intesse aluno</a>
     </div>
 </body>
 </html>

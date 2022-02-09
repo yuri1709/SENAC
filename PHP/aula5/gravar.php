@@ -21,10 +21,9 @@
         // == comparação 
         if($nome != "" && $email != "" && $idade != "" && $estado != ""){    
         //testar para ver se o php está pegando os dados
-            echo"<br>".$nome;    
-            echo"<br>".$email;
-            echo"<br>".$idade;
-            echo"<br>".$estado;
+       // 3 -> montar a instrução para ir ao banco
+       //banco incremetado automacticamente, leva o null
+            $sql = "insert into cliente values(null,'".$nome."','".$email."','".$idade."','".$estado."')";
         }else{
             echo"validação falsa,preencha corretamente!";
         }

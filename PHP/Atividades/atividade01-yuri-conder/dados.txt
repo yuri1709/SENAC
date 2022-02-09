@@ -1,0 +1,8 @@
+Dados do aluno - Cadastro realizado em : 09/02/22 as 09:21:07
+Nome :
+endereço :
+Email :
+telefone :
+sexo :
+------------------------------------------
+

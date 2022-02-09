@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Bem vindo ao gravar &#x1F525</h1>
+    <?php
+    // 1- Resgatar os dados do formulario
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $idade = $_POST['idade'];
+        $estado = $_POST['estado'];
     
+    //2- Validar os dados
+        // != diferente
+        // = atribuição
+        // == comparação 
+        if($nome != "" && $email != "" && $idade != "" && $estado != ""){    
+        //testar para ver se o php está pegando os dados
+            echo"<br>".$nome;    
+            echo"<br>".$email;
+            echo"<br>".$idade;
+            echo"<br>".$estado;
+        }else{
+            echo"validação falsa,preencha corretamente!";
+        }
+        //Preciso saber se não tem nenhum dado null
+        //a terceira camada ja esta sendo validada com o not null.
+    ?>
 </body>
 </html>

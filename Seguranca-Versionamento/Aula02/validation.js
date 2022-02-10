@@ -4,6 +4,7 @@ function validar(){
     }else {
        document.login.senha.focus();
        alert("Senha ou usúario inválido!")
+       window.location.href="erro.html";
         return false;
     }
  }

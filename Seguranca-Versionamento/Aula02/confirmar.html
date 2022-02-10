@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <script>//script para redirecionar 
+            if (sURLVariables !== undefined){
+                return true ;
+            }else{
+                window.location.href="erro.html";  
+                return false;
+            }
+        </script>
     <script>
        var getUrlParameter = function getUrlParameter(sParam){
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),// oque e substring ?
@@ -29,9 +36,9 @@
         //probelma: não consigo fazer uma condição baseada no formulario para usar o window.stop()
         //window.stop();  
     </script>
+  
 </head>
-<body>
-    
+<body>   
     <h1>Bem vindo2</h1>
 </body>
 </html>

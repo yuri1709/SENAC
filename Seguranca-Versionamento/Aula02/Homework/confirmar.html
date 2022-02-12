@@ -16,25 +16,36 @@
     <script>
        var getUrlParameter = function getUrlParameter(sParam){
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),// oque e substring ?
-            sURLVariables = sPageURL.split('&'),
+            sURLVariables = sPageURL.split('&'), // ['usuario=Admin', 'senha=123']
             sParameterName,
             i;
-
+            console.log(sURLVariables);
             for(i=0; i< sURLVariables.length;i++){
-                sParameterName = sURLVariables[i].split('=');
+                
+                sParameterName = sURLVariables[i].split('=');   //['usuario', 'Admin']
+                console.log(sParameterName);     // ['senha', '123']
+                if((sParameterName[1]!=="Admin")&&(i==0)){
+                    var validar = false;
+                } 
+                if((sParameterName[1]!=="123")&&(i==1)){
+                    var validar = false;
+                }       
 
-                if(sParameterName[0] === sParam){
-                    return sParameterName[1] === undefined ? true : sParameterName
+                if(sParameterName[1] === sParam){
+                    return sParameterName[0] === undefined ? true : sParameterName
                 }
             } 
+            if(validar == false){
+                window.stop();
+                alert("Anomalia detectada !");
+            }else{
+                var validar = true;
+            }
             return sURLVariables;
         };
         // fazer uma pagina de erro do javascript
-        document.write('Bem vindo '+ getUrlParameter('usuario')); 
-      //  var auth = document.getElementById("usuario").value;
-      //  document.write(auth);
-        //probelma: não consigo fazer uma condição baseada no formulario para usar o window.stop()
-        //window.stop();  
+        document.write('Bem vindo '+ getUrlParameter('usuario')); // se eu digitar usuario na url mostra pagina
+      
     </script>
   
 </head>

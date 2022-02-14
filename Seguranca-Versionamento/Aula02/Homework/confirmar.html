@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script>//script para redirecionar 
+    <script>
             if (sURLVariables !== undefined){
                 return true ;
-            }else{
-                window.location.href="erro.html";  
+            }else{ 
                 return false;
             }
         </script>
@@ -37,7 +36,7 @@
             } 
             if(validar == false){
                 window.stop();
-                alert("Anomalia detectada !");
+                window.location.href="error401.html"; 
             }else{
                 var validar = true;
             }

@@ -15,6 +15,12 @@ session_start();
     <?php
         echo"Seja Bem Vindo, ".$_SESSION["nome"];
         echo "<h4>MENU</h4>";
+
+        if($_SESSION["perfil"] == "adm"){
+            include_once 'menu_admin.php';
+        } else{
+            include_once 'menu_user.php';
+        }
     ?>
 </body>
 </html>

@@ -1,0 +1,59 @@
+#container{
+    width: 980px;
+    height: auto;
+    margin: auto;
+}
+
+#banner{
+    width: 980px;
+    height: 400px;
+    float: left;
+}
+#topo{
+    width: 980px;
+    height: 150px;
+    float: left;
+    background-color: gray;
+    
+}
+
+#menu{
+    width: auto; /*isso aqui é auto porque o menu faz parte da mesma divisão do topo*/
+    height: auto;
+    float: right; 
+    background-color: gray;  
+}
+
+#menu a {
+    color: #084d6e;
+    text-decoration: none;
+    font-size: 27px;
+    height:27px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#logo{
+    width: 144px;
+    height:150px;
+    float: left;
+}
+
+#menu a:hover{
+    background-color:#00bfff;
+
+}
+#destaque{
+    width: 980px;
+    float:left;
+    background-color:#8b0000;
+    color: #fff;
+    text-align: center;
+}
+#destaque h1{
+    font-size:22px;
+    font-style: italic;
+    margin-top:30px;
+}

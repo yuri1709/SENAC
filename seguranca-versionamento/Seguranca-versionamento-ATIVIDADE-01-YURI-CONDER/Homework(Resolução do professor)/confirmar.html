@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Login</title>
+
+    <script>
+        var getUrlParameter = function getUrlParameter(sParam){
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for(i = 0; i < sURLVariables.length; i++){
+                sParameterName = sURLVariables[i].split('=');
+
+                if(sParameterName[0] === sParam){
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+
+            return sURLVariables;
+        }
+        //Resolução do professor!
+        function isUsuarioLogado(usuario){
+            document.write('estou na função isUsuarioLogado');
+            document.write(usuario);
+
+            if(usuario ==''){
+                window.location.replace('erro.html');
+            }
+        }
+
+        isUsuarioLogado(getUrlParameter('usuario'));
+
+    </script>
+</head>
+<body>
+    <h1>Seja bem vindo!</h1>
+</body>
+</html>

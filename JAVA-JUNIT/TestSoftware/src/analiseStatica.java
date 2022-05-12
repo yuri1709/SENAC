@@ -1,7 +1,4 @@
-/**
- * @author Yuri
- * Exemplo de analise estatica
- */
+
 
 import java.util.Scanner; // importa biblioteca que faz o java ler as informações do teclado
 

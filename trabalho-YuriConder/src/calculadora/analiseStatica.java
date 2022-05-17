@@ -6,7 +6,7 @@ import java.util.Scanner; // importa biblioteca que faz o java ler as informaç�
 public class analiseStatica {
 	
 //Operações:
-	
+//criados os metodos de operações matemáticas para realizar os teste no junit	
 	//method some
 	public static int somar(int a, int b) {
 		return a+b;		

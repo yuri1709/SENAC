@@ -26,9 +26,4 @@ public class calculadora {
 		return a/b;
 	}
 	
-	//método divisão de números reais
-	public double divDouble(double a, double b) {
-		return a/b;
-	}
-	
 }
